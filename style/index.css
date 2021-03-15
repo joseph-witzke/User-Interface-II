@@ -1,1 +1,180 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*{
+    box-sizing:border-box; 
+    max-width:100%;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    font-family: sans-serif;
+    background-color: #f2edd7;
+}
+  nav{  
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+
+}
+
+.links {
+    display: flex;
+    text-align: center;
+    width: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    background-color: #92967d;
+    color: whitesmoke;
+    border-radius: 10%;
+    margin: 0 1%;
+    padding: 1% 1%;
+}
+
+a:hover{
+    background-color: whitesmoke;
+    color: #92967d;
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+    background-color: #92967d;
+}
+
+h2 { 
+    font-size: 6rem;
+    font-family: 'Fascinate', cursive;
+    background-color: pink;
+    padding: 2% 2%;
+    margin: 2% 2%;
+}
+
+/* .image{ 
+    margin-top:5%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center top;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}*/
+
+.first-section{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    padding: 5% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1615390164801-cf2e70f32b53?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60); 
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-between;
+}
+.projects div{
+    width: 30%;
+}
+p{
+    color: black;
+    background-color: pink;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #92967d;
+    padding: 5% 0;
+    
+}
+ button{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10%;
+}
+
+/* Media queries styling */
+/* Tablet */
+@media(max-width: 800px){
+    .links{
+        width: 40%;
+    }
+}
+
+/* Mobile */
+
+@media(max-width: 500px){
+    nav{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+    .links{
+        width: 100%;
+        padding: 2%;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .links a{
+        padding: 1%;
+        margin: 1%;
+    }
+    
+    .first-section{
+        height: 50vh;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .projects{
+        flex-direction: column column-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projects div{
+        width: 45%;
+        text-align: center;
+        padding-top: 2%;
+    }
+
+}
