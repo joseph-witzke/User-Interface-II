@@ -38,6 +38,7 @@ body{
   nav{  
     display: flex;
     justify-content: space-between;
+    padding: 1%;
 
 }
 
@@ -56,13 +57,19 @@ a{
     color: whitesmoke;
     border-radius: 10%;
     margin: 0 1%;
-    padding: 0   1%;
+    padding: 1% 1%;
+}
+
+a:hover{
+    background-color: whitesmoke;
+    color: #92967d;
 }
 h1 {
     font-size: 4rem;
     color: white;
     background-color: #92967d;
 }
+
 h2 { 
     font-size: 6rem;
     font-family: 'Fascinate', cursive;
